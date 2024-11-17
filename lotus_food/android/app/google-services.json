@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371816610221",
+    "project_id": "test-f4aed",
+    "storage_bucket": "test-f4aed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371816610221:android:77095384ee3d5ccada4924",
+        "android_client_info": {
+          "package_name": "com.example.lotus_food"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIEYnZtQmwB4rqXcm4fcghhtfD9A4DRtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
