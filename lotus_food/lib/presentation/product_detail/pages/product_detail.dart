@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lotus_food/common/widgets/appbar/app_bar.dart';
 import 'package:lotus_food/domain/product/entities/product.dart';
+import 'package:lotus_food/presentation/product_detail/bloc/favorite_icon_cubit.dart';
 import 'package:lotus_food/presentation/product_detail/widgets/add_to_bag.dart';
+import 'package:lotus_food/presentation/product_detail/widgets/favorite_button.dart';
 import 'package:lotus_food/presentation/product_detail/widgets/product_images.dart';
 import 'package:lotus_food/presentation/product_detail/widgets/product_price.dart';
 import 'package:lotus_food/presentation/product_detail/widgets/product_title.dart';
@@ -30,14 +32,14 @@ class ProductDetailPage extends StatelessWidget {
         BlocProvider(create: (context) => ProductColorSelectionCubit()),
         BlocProvider(create: (context) => ProductSizeSelectionCubit()),
         BlocProvider(create: (context) => ButtonStateCubit()),
-        // BlocProvider(create: (context) => FavoriteIconCubit()..isFavorite(productEntity.productId))
+        BlocProvider(create: (context) => FavoriteIconCubit()..isFavorite(productEntity.productId))
       ],
       child: Scaffold(
         appBar: BasicAppbar(
           hideBack: false,  
-          // action: FavoriteButton(
-          //   productEntity: productEntity,
-          // ),
+          action: FavoriteButton(
+            productEntity: productEntity,
+          ),
          ),
           bottomNavigationBar: AddToBag(productEntity: productEntity,),
           body: SingleChildScrollView(
