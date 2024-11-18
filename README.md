@@ -13,16 +13,15 @@ Lotus Food is a  mobile application developed using Flutter for the frontend and
 
 - Flutter
 - Provider
-- Hive
 - Firebase
 - cupertino_icons
 - firebase_auth
--  firebase_core
--  cloud_firestore
--  flutter_svg
--  flutter_bloc
--  dartz
--  get_it
+- firebase_core
+- cloud_firestore
+- flutter_svg
+- flutter_bloc
+- dartz
+- get_it
 
 ## 📱 Screenshots
 
