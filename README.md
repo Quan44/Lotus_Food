@@ -1,1 +1,1 @@
-# LOTUSFOOD: Lotus Food Mobile Application Documentation
+LOTUSFOOD: Lotus Food Mobile Application Documentation
